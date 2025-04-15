@@ -1,0 +1,155 @@
+
+
+.main-container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column; 
+  width: 95%;
+  margin: 20px auto;
+  background-color: #000000;
+}
+
+
+#quote {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px; 
+  font-family: "Baskervville", serif;
+  background-color: #000000;
+  transition: color 1s ease-in-out;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  animation: appear linear;
+  animation-duration:1s;
+}
+
+.slideshow-container {
+
+  width: 100%; 
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.mySlides {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+  display: block;
+  max-height: 70vh; 
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 12px; 
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 10%;
+  user-select: none;
+  opacity: 75%;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  opacity: 100%;
+  scale: 1.4;
+}
+
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 14px; 
+  padding: 10px 8px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* slide counter text */
+.numbertext {
+  color: #f2f2f2;
+  background-color: #000000;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+ 
+  .content {
+    flex-direction: row; 
+    margin-top: 4%;
+  }
+  
+  #quote {
+    width: 50%;
+    font-size: 2vw; 
+  }
+  
+  .slideshow-container {
+    width: 50%; 
+  }
+  
+  .text {
+    font-size: 1vw;
+  }
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  .content {
+    width: 90%;
+    margin-top: 3%;
+  }
+  
+  #quote {
+    padding: 30px;
+    font-size: 1.8vw;
+  }
+
+}
